@@ -18,7 +18,14 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heebo': ['Heebo', 'sans-serif'],
+			},
 			colors: {
+				'brand-pink': 'hsl(var(--brand-pink))',
+				'brand-pink-light': 'hsl(var(--brand-pink-light))',
+				'brand-beige': 'hsl(var(--brand-beige))',
+				'brand-cream': 'hsl(var(--brand-cream))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
