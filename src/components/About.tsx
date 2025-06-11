@@ -6,46 +6,75 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            איך זה עובד?
+            איך הסדנה מתנהלת?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            אני מגיעה אליכם עם מגוון גדול של איורים מושלמים ומטפים שייעלו לכם חיוך שאיתם תוכלו לעצב את המוצר
-            שבחרתם לעצבו בבדיקה שבילכם.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            אני מגיעה אליכם עם מגוון עיצובים מושלמים ומדבקות שיעלו לכם חיוך. 
+            המשתתפים בוחרים את העיצוב שמדבר אליהם ויוצרים בעצמם מוצר אישי ומיוחד.
+            כולם יוצאים עם מתנה אישית שתישאר איתם לתמיד!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="border-brand-beige bg-brand-cream/50">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                למי זה מתאים?
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
+                🎯 למי זה מתאים?
               </h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li>• אנשים שרוצים שעה וחצי של חווית כיף</li>
-                <li>• מטיילאי שש ועד 120</li>
-                <li>• מתאים למשפחות / בת מצווה / ועדי עובדים / מפגשי קהילה</li>
+              <ul className="space-y-4 text-muted-foreground">
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-pink">👨‍👩‍👧‍👦</span>
+                  <span>משפחות שרוצות לבלות יחד</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-pink">🏢</span>
+                  <span>צוותי עובדים וחברות</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-pink">🎉</span>
+                  <span>אירועי בת/בר מצווה</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-pink">🤲</span>
+                  <span>קהילות ומפגשים חברתיים</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-pink">✨</span>
+                  <span>אנשים שמרגישים פחות יצירתיים</span>
+                </li>
               </ul>
             </CardContent>
           </Card>
 
           <Card className="border-brand-beige bg-brand-pink-light/50">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                מה שמחבר גם מחברת, וגם עם ערך אמיתי?
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
+                💝 מה מיוחד בסדנה?
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                זו סדנת יצירה עם חיבור לזהות - זמן לעצור, רגע, לחשוב, 
-                לבחור מילה או משפט שנועתים בכם - לבחור מילים לחיות מכם ציור,
-                ללהכנס לתהליך היצירה בקבוצה וגם יחד עם זה - עם יצירה שהיא גם יפה וגם אישית.
-              </p>
+              <ul className="space-y-4 text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-pink mt-1">⏰</span>
+                  <span>זמן איכות של שעה וחצי מהנה</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-pink mt-1">🎨</span>
+                  <span>חוויה יצירתית נגישה לכולם</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-pink mt-1">🎁</span>
+                  <span>כל משתתף יוצא עם מוצר אישי</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-pink mt-1">👥</span>
+                  <span>מתאים לקבוצות עד 120 משתתפים</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-pink mt-1">😊</span>
+                  <span>אווירה חמה ותומכת</span>
+                </li>
+              </ul>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-lg text-muted-foreground">
-            זה דרך עדינה, נעימה ומרגשת לעשות זאת זה - עם יצירה שהיא גם יפה וגם אישית.
-          </p>
         </div>
       </div>
     </section>

@@ -1,45 +1,45 @@
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Hero = () => {
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/972545462773?text=היי יערה, אני מעוניינת לשמוע על הסדנאות שלך", "_blank");
+  };
+
   return (
     <section className="relative bg-gradient-to-br from-brand-cream via-brand-pink-light to-brand-beige py-20 px-4">
       <div className="container mx-auto text-center max-w-4xl">
-        <div className="mb-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 leading-tight">
-            סדנאות ומוצרים
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            סדנה של שעה וחצי
             <br />
-            <span className="text-brand-pink">שמדברים אותך</span>
+            <span className="text-brand-pink">שתשאיר לכם זיכרון ביד ובלב</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            צרו עמי מוצרים מותאמים אישית - בקבוקים תרמיים, כוסות, מחברות וסדנאות יצירה
-            שיביאו את האישיות שלכם לכל רגע ביום
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
+            אני מגיעה עם מגוון עיצובים שמחים – ואתם מעצבים בעצמכם!
+            <br />
+            גם מי שאומר שאין לו כישרון – יוצא עם חיוך ומוצר מושלם
+          </p>
+          <p className="text-lg text-foreground font-medium">
+            הסדנה נגישה, מהנה ומתאימה לקבוצות עד 120 משתתפים
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="mb-8">
           <Button 
             size="lg" 
-            className="bg-brand-pink hover:bg-brand-pink/90 text-white px-8 py-6 text-lg"
+            onClick={handleWhatsAppClick}
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-xl flex items-center gap-3 mx-auto shadow-lg"
           >
-            הזמינו סדנה עכשיו
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white px-8 py-6 text-lg"
-          >
-            צפו בגלריה
+            <MessageCircle className="h-6 w-6" />
+            רוצה לסגור סדנה? לחצי כאן לדבר איתי בוואטסאפ
           </Button>
         </div>
 
-        <div className="flex items-center justify-center gap-2 text-brand-pink">
-          <div className="flex">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-5 w-5 fill-current" />
-            ))}
-          </div>
-          <span className="text-muted-foreground">מלקוחות מרוצות ברחבי הארץ</span>
+        <div className="text-center">
+          <p className="text-lg text-brand-pink font-medium">
+            לפרטים והזמנות – יערה: 054-5462773
+          </p>
         </div>
       </div>
     </section>
