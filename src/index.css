@@ -14,6 +14,12 @@
     --brand-pink-light: 345 45% 92%;
     --brand-beige: 35 15% 88%;
     --brand-cream: 35 20% 95%;
+    
+    /* New brand colors from user specs */
+    --page-background: 26 100% 98%; /* #fffaf6 */
+    --title-color: 315 24% 30%; /* #623b5a */
+    --button-color: 351 81% 66%; /* #f09aa9 */
+    --body-text: 0 0% 23%; /* #3a3a3a */
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
