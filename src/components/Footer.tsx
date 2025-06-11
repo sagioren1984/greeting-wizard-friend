@@ -8,7 +8,10 @@ const Footer = () => {
               יערה אורן
             </h3>
             <p className="text-muted-foreground">
-              סדנאות ומתנות מעוצבות • מוצרים שמדברים אותך
+              יוצרים רגעים • סדנאות יצירה בעיצוב אישי שמדברים אליכם
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              למידע נוסף: 054-5462773
             </p>
           </div>
           

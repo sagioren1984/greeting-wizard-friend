@@ -11,17 +11,17 @@ const Hero = () => {
       <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            סדנה של שעה וחצי
+            סדנאות שמחברות
             <br />
-            <span className="text-brand-pink">שתשאיר לכם זיכרון ביד ובלב</span>
+            <span className="text-brand-pink">ומעצבות רגעים</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
-            אני מגיעה עם מגוון עיצובים שמחים – ואתם מעצבים בעצמכם!
+            חוויה יצירתית אישית – סדנאות לעיצוב מוצרים שמדברים אליך, עם ערך רגשי עמוק והנאה קבוצתית.
             <br />
-            גם מי שאומר שאין לו כישרון – יוצא עם חיוך ומוצר מושלם
+            <span className="text-brand-pink font-medium">גם מי שלא חשב על כישרון יצירתי יגלה את הכיף שביצירה</span>
           </p>
           <p className="text-lg text-foreground font-medium">
-            הסדנה נגישה, מהנה ומתאימה לקבוצות עד 120 משתתפים
+            יערה אורן - סדנאות ומוצרים שמדברים אותך
           </p>
         </div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
             className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-xl flex items-center gap-3 mx-auto shadow-lg"
           >
             <MessageCircle className="h-6 w-6" />
-            רוצה לסגור סדנה? לחצי כאן לדבר איתי בוואטסאפ
+            דברי איתי עכשיו בוואטסאפ
           </Button>
         </div>
 

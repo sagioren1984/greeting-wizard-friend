@@ -16,10 +16,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            מוכנים לסגור סדנה?
+            רוצה להזמין סדנא לקבוצה?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            בואו נתכנן יחד את הסדנה המושלמת עבור הקבוצה שלכם
+            צור/י קשר עכשיו דרך וואטסאפ וקבע/י סדנא מותאמת במיוחד עבור הצוות, הקהילה או האירוע שלך.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                   className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg flex items-center gap-3"
                 >
                   <MessageCircle className="h-5 w-5" />
-                  שלחי הודעה בוואטסאפ
+                  דברי איתי בוואטסאפ
                 </Button>
                 
                 <Button 
