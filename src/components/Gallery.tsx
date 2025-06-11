@@ -35,20 +35,20 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-background">
+    <section id="gallery" className="py-16 md:py-20 bg-white/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-title-color mb-4">
             גלריית עבודות
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-body-text max-w-2xl mx-auto">
             הציצו על חלק מהיצירות המקסימות שנוצרו בסדנאות שלנו
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {galleryItems.map((item, index) => (
-            <Card key={index} className="border-brand-beige overflow-hidden group hover:shadow-xl transition-all duration-300">
+            <Card key={index} className="border-button-color/20 overflow-hidden group hover:shadow-xl transition-all duration-300 bg-white">
               <div className="aspect-square overflow-hidden">
                 <img 
                   src={item.image} 
@@ -56,11 +56,11 @@ const Gallery = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6 bg-brand-cream/50">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
+              <CardContent className="p-4 md:p-6 bg-white">
+                <h3 className="text-lg md:text-xl font-semibold text-title-color mb-2">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-body-text text-sm md:text-base">
                   {item.description}
                 </p>
               </CardContent>
@@ -68,11 +68,11 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-lg text-muted-foreground italic">
+        <div className="text-center mt-8 md:mt-12 px-4">
+          <p className="text-base md:text-lg text-body-text italic">
             "אם אתם רוצים לחשוב יחד מה יכול להתאים בדיוק לקהילה או לקבוצה שלכם, מוזמנים לפנות אלי, ואשמח לבנות את זה איתכם יחד."
           </p>
-          <p className="text-brand-pink font-medium mt-2">- יערה</p>
+          <p className="text-button-color font-medium mt-2 text-sm md:text-base">- יערה</p>
         </div>
       </div>
     </section>
