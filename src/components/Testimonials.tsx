@@ -4,21 +4,22 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "לקוחה מרוצה",
-      role: "משתתפת בסדנה",
-      text: "הסדנא הייתה חוויה משדרגת – יצירתיות, הנאה וחיבור אמיתי!",
+      name: "שירלי, מנהלת משאבי אנוש",
+      role: "",
+      text: "הסדנה הייתה מרגשת, מקצועית ועם תוצרים מושלמים! הצוות לא מפסיק לדבר עליה.",
       rating: 5
     },
     {
-      name: "משתתף בסדנא",
-      role: "צוות עובדים",
-      text: "רקמה, הדפסה וחיוכים – פשוט קסם!",
+      name: "הילה, משתתפת בסדנת יום הולדת",
+      role: "",
+      text: "יערה ראתה כל אחת מאיתנו, ויצרנו משהו שניקח איתנו שנים קדימה.",
       rating: 5
     },
     {
-      name: "מנהלת רווחה",
-      role: "ארגון גדול",
-      text: "יערה הביאה לנו בדיוק מה שחיפשנו - פעילות שמחברת ומשאירה חיוך על הפנים של כולם."
+      name: "רחלי, רכזת קהילה",
+      role: "",
+      text: "פעילות שמרימה, מחברת ונותנת השראה. ממליצה בחום!",
+      rating: 5
     }
   ];
 
@@ -26,12 +27,9 @@ const Testimonials = () => {
     <section className="py-16 md:py-20 bg-[#f9f9f9]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#d6336c] mb-4">
-            לקוחות מספרים...
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#d6336c] mb-4">
+            לקוחות מספרות
           </h2>
-          <p className="text-lg md:text-xl text-body-text max-w-2xl mx-auto">
-            הקשיבו למה שיש למשתתפים הקודמים לספר על החוויה
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
@@ -53,7 +51,6 @@ const Testimonials = () => {
                 
                 <div className="border-t border-button-color/20 pt-4">
                   <p className="font-semibold text-title-color text-sm md:text-base">{testimonial.name}</p>
-                  <p className="text-xs md:text-sm text-body-text">{testimonial.role}</p>
                 </div>
               </CardContent>
             </Card>

@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const WhatsAppCTA = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/972545462773?text=היי יערה, אני מעוניינת לשמוע על הסדנאות שלך", "_blank");
+    window.open("https://wa.me/972545462773", "_blank");
   };
 
   return (
@@ -11,11 +11,11 @@ const WhatsAppCTA = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#d6336c] mb-10 leading-tight">
-            רוצה לתאם סדנה?
+            בואי נדבר – נתפור לך סדנה מושלמת
           </h2>
           
           <p className="text-xl md:text-3xl text-body-text mb-12 leading-relaxed font-medium">
-            בואי נדבר ונתאים את הסדנה המושלמת בדיוק בשבילך ולקבוצה שלך
+            מלאי את הפרטים או כתבי לי ישירות בווטסאפ.
           </p>
 
           <Button 
@@ -25,7 +25,7 @@ const WhatsAppCTA = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
             <MessageCircle className="h-8 w-8 animate-pulse" />
-            רוצה לתאם סדנה? לחצי כאן לוואטסאפ!
+            שלחי הודעה לוואטסאפ
           </Button>
 
           <div className="mt-8 bg-white/40 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto">
@@ -34,6 +34,15 @@ const WhatsAppCTA = () => {
             </p>
           </div>
         </div>
+      </div>
+      
+      {/* Image on the side */}
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        <img 
+          src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+          alt="צור קשר"
+          className="rounded-l-3xl shadow-2xl max-w-sm object-cover opacity-30"
+        />
       </div>
       
       {/* Decorative elements */}
