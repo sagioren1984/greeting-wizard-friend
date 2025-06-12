@@ -5,6 +5,7 @@ import WhyChooseMe from "@/components/WhyChooseMe";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import FinalCTA from "@/components/FinalCTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -19,6 +20,7 @@ const Index = () => {
       <Services />
       <Gallery />
       <Testimonials />
+      <FinalCTA />
       <Contact />
       <Footer />
       <WhatsAppFloat />
