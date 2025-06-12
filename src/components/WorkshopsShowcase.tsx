@@ -36,31 +36,31 @@ const WorkshopsShowcase = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-20 md:py-24 bg-gradient-to-br from-section-blue to-section-beige">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#d6336c] mb-6">
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#d6336c] mb-8">
             הסדנאות שלי
           </h2>
-          <p className="text-lg md:text-xl text-body-text max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-body-text max-w-4xl mx-auto font-medium">
             מגוון סדנאות יצירה שמותאמות במיוחד לצרכים שלכם
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-7xl mx-auto">
           {workshops.map((workshop, index) => (
             <Card 
               key={index} 
-              className="bg-white border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105 rounded-xl"
+              className="bg-white/90 backdrop-blur-sm border-0 hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 rounded-2xl overflow-hidden group"
             >
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 flex justify-center">
+              <CardContent className="p-8 text-center">
+                <div className="mb-6 flex justify-center transform group-hover:scale-125 transition-transform duration-300">
                   {workshop.icon}
                 </div>
-                <h3 className="text-xl font-bold text-title-color mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-title-color mb-4">
                   {workshop.title}
                 </h3>
-                <p className="text-body-text leading-relaxed">
+                <p className="text-body-text leading-relaxed text-base md:text-lg">
                   {workshop.description}
                 </p>
               </CardContent>
